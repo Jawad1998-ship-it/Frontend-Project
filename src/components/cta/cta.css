@@ -1,0 +1,128 @@
+.cta_container
+{
+    border: 1px solid whitesmoke;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+
+.cta-content p
+{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    color: #0e0e0e;
+}
+
+.cta-content h3
+{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000;
+}
+
+.cta-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.cta-btn button
+{
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+@media screen and (max-width:425px)
+{
+    .cta_container
+    {   
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .cta-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+
+    .cta-content p
+    {
+        font-size: 14px;
+    }
+
+    .cta-content h3
+    {
+        font-size: 18px;
+    }
+
+    .cta-btn
+    {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width:375px)
+{
+    .cta_container
+    {   
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .cta-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+
+    .cta-content p
+    {
+        font-size: 12px;
+    }
+
+    .cta-content h3
+    {
+        font-size: 16px;
+    }
+
+    .cta-btn
+    {
+        margin: 0 auto;
+    }
+
+}

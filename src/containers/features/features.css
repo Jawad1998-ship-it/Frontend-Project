@@ -1,0 +1,121 @@
+.features_Container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background: var(--color-footer);
+    gap: 10px;
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #13579b 25%, rgb(21, 89, 156) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #146cc4 25%, rgb(33, 111, 189) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #1d64aa 25%, rgb(20, 92, 165) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #195694 25%, rgb(21, 84, 146) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #115396 25%, rgb(6, 82, 158) 85%, rgba(27, 120, 222, 1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.features-heading
+{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 3rem;
+}
+
+.features-heading h1
+{
+    font-family: var(--font-family);
+    background-color: var(--gradient-text);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 54px;
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features-heading p 
+{
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.featured-items
+{
+    flex:1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px)
+{   
+    .features_Container
+    {
+        display: flex;
+        flex-direction: column;
+        gap:0;
+    }
+
+    
+    .features-heading
+    {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        margin-right: 1rem;
+    }
+
+    .features-heading h1
+    {
+        font-family: var(--font-family);
+        color: rgb(255, 177, 104);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .features-heading p 
+    {
+        font-family: var(--font-family);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #fff;
+        margin-top: 2rem;
+    }
+
+    .featured-items
+    {
+        flex:1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+}
